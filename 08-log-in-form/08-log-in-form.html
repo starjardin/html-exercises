@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-      08: A log in form
-    </title>
-  </head>
-  <body>
-    <header>
-      <h1>
-        Hello again!
-      </h1>
-    </header>
-    <main>
-      <header>
-        <h2>Log in</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    08: A log in form
+  </title>
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align:center">
+      Hello again!
+    </h1>
+  </header>
+  <main>
+  <form action="/aciton_page.php">
+      <div class="row"></div>
+        <h2 style="color:red">Log in e-mail
+        </h2>
+        <div class="col">
+        </div>
+      <div>
         <p>Please log in before accessing our website</p>
-      </header>
-
-      <!-- Add your log in form here -->
-
+      </div>
+      <div class="container">
+          <label id="Username"><b style="color:limegreen">Username</b></label>
+      </div>
+        <p>
+          <input type="text" name="username" placeholder="Enter user e-mail adress" required>
+        </p>
+      <div class="container"></div>
+          <label id="psw"><b style="color:limegreen">Password</b></label>
+        <p>
+          <input type="password" name="password" placeholder="Enter password" required>
+        </p>
+        <div>
+          <input type="submit" value="log-in">
+        </div>
+      </form>
     </main>
-  </body>
+
+          <!-- Add your log in form here -->
+</body>
+
 </html>
