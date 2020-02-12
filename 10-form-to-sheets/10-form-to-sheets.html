@@ -13,7 +13,6 @@
   <header>
     <h1>Text entry</h1>
   </header>
-  <h2>
   <form action="https://script.google.com/macros/s/AKfycbx_k22UijbL8nV_HE_eFCqonZ5LtCmyZqLd_wvG3_lWoAdLGWI/exec"
     method="POST">
 
@@ -22,48 +21,53 @@
         Create a field for each cell in the Google Sheet.
       -->
 
-    <fieldset>
-      <legend> contributor</legend>
-      <input type="text" name="contributor" value="Tantely">
-    </fieldset>
-    <fieldset>
-      <legend>artist_name</legend>
-      <input type="text" name="artist_name" value="Odyai" requiered>
-    </fieldset>
-    <fieldset>
-      <legend> artist_id</legend>
-          <input type="text" name="arist_id" value="odyai">
-    </fieldset>
-    <fieldset>
-      <legend>genre</legend>
-      <select id="genre"
-       <option value="R$B">R$B</option>
-        <option value="basesa" >basesa</option>
-        <option value="Kilalaky"> Kilalaky</option>
-        <option value="Rap">Rap</option>
-        <option value="salegy">salegy</option>
-        <option value="kawitry">kawitry</option>
-        <option value="watsa">watsa</option>
-        <option value="slow">salegy</option>
-      </select>
-    </fieldset>
-    <fieldset>
-      <legend>photo_url</legend>
-      <input type="url" name="photo_url"
-        value="https://www.google.com/search?q=odyai&sxsrf=ACYBGNSvBrO42np8dzBMxjdzb0UtCceQaQ:1581487477636&source=lnms&tbm=isch&sa=X&ved=2ahUKEwihucj6q8vnAhWKlhQKHXBvDysQ_AUoAnoECAgQBA&biw=1242&bih=568#imgrc=MawCMWZaoq_2aM">
-    </fieldset>
-    <fieldset>
-      <legend> biography</legend>
-      <input type="text" name="biography" value="go to the website">
-    </fieldset>
-    <fieldset>
-      <legend> website</legend>
-      <input type="url" name="url" value="https://web.facebook.com/Odyai/?_rdc=1&_rdr">
-    </fieldset>
     <p>
-    </h2>
-      <button type="submit">Save</button>
+      <label> contributor
+        <input type="hidden" name="contributor" value="Tantely">
+      </label>
     </p>
+    <p>
+      <label>artist_name<br>
+        <input type="text" name="artist_name" required>
+      </label>
+    </p>
+    <p>
+      <label> artist_id<br>
+        <input type="text" name="arist_id" pattern="[a-z-_]" required>
+      </label>
+    </p>
+    <p>
+      <label>genre<br>
+        <select name="genre">
+          <optgroup label="Malagasy genres">
+            <option value="R$B">R$B</option>
+            <option value="basesa">basesa</option>
+            <option value="Kilalaky"> Kilalaky</option>
+            <option value="Rap">Rap</option>
+            <option value="salegy">salegy</option>
+            <option value="kawitry">kawitry</option>
+            <option value="watsa">watsa</option>
+            <option value="slow">salegy</option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>photo_url<br>
+        <input type="url" name="photo_url">
+      </label>
+    </p>
+    <p>
+      <label> biography<br>
+        <input type="text" name="biography">
+      </label>
+    </p>
+    <p>
+      <label> website<br>
+        <input type="url" name="url">
+      </label>
+      <p>
+        <button type="submit">Save</button>
+      </p>
   </form>
 </body>
 
