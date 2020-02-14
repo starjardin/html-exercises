@@ -1,95 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-      11: Inline markup
-    </title>
-  </head>
-  <body>
-    <header>
-      <h1>
-        Inline markup
-      </h1>
-      <p>Use the inline elements mentioned in the instructions for this exercise on the markup below.
-    </header>
-    <main>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>
+        11: Inline markup
+      </title>
+    </head>
+    <body>
+      <header>
+        <h1>
+          Inline markup
+        </h1>
+        <p>
+          Use the inline elements mentioned in the instructions for this exercise on the markup below.
+        </p>
+      </header>
+      <main>
+        <!-- In this example, the 'Wait!' needs stressing when vocalised -->
+        <p>
+          <strong>
+            <q>
+              <em>
+                Wait!
+              </em>
+            </q>
+          </strong>
+          shouted Jesse.
+        </p>
+        <hr>
+        <!-- It's a good idea to tell a computer how to read a datetime: -->
+        <p>
+          The time is now <time datetime="2020-02-12T14:00:00+03:00"></time>2pm, on Wednesay the 12<sup>th</sup> of February.
+        </p>
+        <hr>
+        <!-- What do 'H' and 'O' mean here? -->
+        <p>
+          The elements <abbr title="hydrogen">H</abbr> and <abbr title="oxygen">O</abbr>, bond as H<sub>2</sub>0, or <dfn>water</dfn> (as it is colloquaially known).
+        </p>
+        <hr>
+        <!-- Sometimes we just want to make something look a certain way -->
+        <p>
+          Editor's Notes:
+          Please use
+          <kbd>
+            <kbd>CTRL</kbd>+<kbd>B</kbd>
+          </kbd> to bold this word:
+          <b>
+            Critical
+          </b><br>
+          Please use
+          <kbd>
+            <kbd>CTRL</kbd>+<kbd>I</kbd>
+          </kbd> to italicise this word:
+          <i>
+            Doubtful
+          </i><br>
+          Please underline this word:
+          <u>
+            Thinking
+          </u><br>
+          Please put a line through this word: <del>
+            Assuming
+          </del><br>
+            Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
+          "The
+          <del>
+            slow
+          </del>
+          <ins> qiuck
+          </ins> brown fox jumped over the lazy dog."
+        </p>
+        <hr>
+        <!-- We can do the same with samples of code, even maintaining the whitespace: -->
+          <p>
+            <q>
+              <em>
+                Woah!
+              </em>
+              <code>
+                that
+              </code>
+              was unexpected
+            </q>! exclaimed Keith.
+            Curiously, Jesse looked at the output on Keith's screen and it said:<br>
+          </p>
+  <pre>
+  Unexpected value for argument <code>that</code>
+  - in function clickHandler, line 12
+  - called from function anonymous, line 34
+  </pre>
+        <!-- We can add helpful markup to highlight words -->
+          <p>
+            Your search term:<mark>'Helicopter'</mark> was found in the following documents:
+          </p>
+          <ul>
+            <li>
+              <a href="#bell-222">Bell 222</a>:<br>
+              The Model 222 is a <mark>Helicopter</mark> made by the <em>Bell <mark>Helicopter</mark> Corporation</em>.
+            </li>
+          </ul>
 
-      <!-- In this example, the 'Wait!' needs stressing when vocalised -->
-      <p>
-        <strong>"Wait!"</strong> <var>shouted Jesse.</var>
-      </p>
-
-      <hr>
-
-      <!-- It's a good idea to tell a computer how to read a datetime: -->
-      <p>
-        <date-time><s>The time is now 2pm, on Wednesay the 12<sup>th</sup> of February, 2020.</s></date-time>
-      </p>
-
-      <hr>
-
-      <!-- What do 'H' and 'O' mean here? -->
-      <p>
-        The elements <b>H</b> and <b>O</b>, bond as <b>H<sub>2</sub>0</b>, or water <pre>(as it is colloquaially known).</pre>
-      </p>
-
-      <hr>
-
-      <!-- Sometimes we just want to make something look a certain way -->
-      <p>
-        <em><b>Editor's Notes:</b></em><br>
-        <ul>
-          <li>
-
-            Please use <q>CTRL+B</q> to bold this word: <b>Critical</b><br>
-          </li>
-          <li>
-            Please use <q>CTRL+I</q> to italicise this word: <i>Doubtful</i><br>
-          </li>
-          <li>
-
-            Please underline this word: <u>Thinking</u><br>
-          </li>
-          <li>
-            Please put a line through this word: <del>Assuming</del><br>
-          </li>
-          <li>
-             Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-            "The <del>slow</del><ins> qiuck</ins> brown fox jumped over the lazy dog."
-          </li>
-        </ul>
-      </p>
-
-      <hr>
-
-      <!-- We can do the same with samples of code, even maintaining the whitespace: -->
-      <p>
-        <em><b>"Woah! 'that' was unexpected!"</b></em> exclaimed Keith.<br>
-        Curiously, Jesse looked at the output on Keith's screen and it said:<br>
-
-          Unexpected value for argument 'that'
-          <small>
-            <br>- in function clickHandler, <var>line 12</var>
-            <br>
-            - called from function anonymous, <var>line 34</var>
-          </small>
-      </p>
-
-      <hr>
-
-      <!-- We can add helpful markup to highlight words -->
-      <p>
-        <kbd>Your search term:</kbd> <strong>'Helicopter'</strong> was found in the following documents:
-      </p>
-      <ul>
-        <li>
-          <a href="#bell-222">Bell 222</a>:<br>
-          The Model <mark>222</mark> is a helicopter made by the <em>Bell Helicopter Corporation</em>.
-        </li>
-      </ul>
-
-    </main>
-  </body>
-</html>
+      </main>
+    </body>
+  </html>
