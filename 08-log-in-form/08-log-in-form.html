@@ -11,31 +11,32 @@
 
 <body>
   <header>
-    <h1 style="text-align:center">
+    <h1>
       Hello again!
     </h1>
   </header>
   <main>
     <form action="/log-in" method="POST">
-      <div class="row"></div>
-      <h2 style="color:red">Log in e-mail
-      </h2>
-      <div class="col">
-      </div>
-      <div>
-        <p>Please log in before accessing our website
+      <h2>
+        <p>
+          Please log in before accessing our website
         </p>
-      </div>
-      <label id="Username"><b style="color:limegreen">Username</b></label><br>
-      <input type="text" name="username" placeholder="Enter user e-mail adress" required>
+      </h2>
       <p>
-        <label id="psw"><b style="color:limegreen">Password</b></label><br>
-        <input type="password" name="password" placeholder="Enter password" required>
+        <label>
+          Username<br>
+          <input type="text" name="username"  required>
+        </label>
       </p>
       <p>
-        <input type="submit" value="log-in">
+        <label>
+          Password<br>
+          <input type="password" name="password" required>
+        </label>
       </p>
-
+      <p>
+        <button type="submit">log in</button>
+      </p>
     </form>
   </main>
 
