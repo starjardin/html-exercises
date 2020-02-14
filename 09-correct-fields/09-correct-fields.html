@@ -32,32 +32,46 @@
         <h2>Text entry</h2>
       </header>
       <fieldset>
-        <legend>Simple text: Nickname</legend>
-        <input type="text" id="nickname">
+        <label>
+          Simple text: Nickname
+          <input type="text" name="nickname">
+        </label>
         <!-- The server is expecting plain text here with the `name` of `nickname`. Linebreaks aren't allowed. -->
       </fieldset>
       <fieldset>
-        <legend>Multi-line Text: Biography</legend>
-        <input type="text" id="biography">
+        <label>
+          Multi-line Text: Biography
+          <textarea name="biography"></textarea>
+        </label>
         <!-- The server is expecting paragraphs of text here to act as the `biography` field. Linebreaks need to be saved. -->
       </fieldset>
       <fieldset>
-        <legend>Mobile phone number</legend>
-        <input type="number" name="Mobile phone number" required>
+        <label>
+          Mobile phone number
+          <input type="tel" name="mobile_phone" required>
+        </label>
         <!-- The server is expecting the user's `mobile_phone` here. -->
       </fieldset>
       <fieldset>
-        <legend>Website</legend>
-        <input type="url" id="website" required>
+        <label>
+          Website
+          <input type="url" name="website" required>
+        </label>
       </fieldset>
       <fieldset>
-        <legend>Date of birth</legend>
-        <input type="date" name="date of birth">
+        <p>
+          <label>
+            Date of birth
+            <input type="date" name="date_of_birth" required>
+          </label>
+        </p>
         <!-- The server is expecting the user's `date_of_birth` here. -->
       </fieldset>
       <fieldset>
-        <legend>Age</legend>
-        <input type="number" name="age">
+        <label>
+          Age
+          <input type="number" name="age">
+        </label>
         <!-- The server is expecting the user's `age` in years here. -->
       </fieldset>
       <div>
@@ -67,39 +81,48 @@
 
     <form action="#form_booleans" method="GET" id="form_booleans">
       <header>
-        <h2>Boolean / Binary choices</h2>
+        <h2>
+          Boolean / Binary choices
+        </h2>
       </header>
       <fieldset>
-        <legend>True / False, with a default choice</legend>
+        <legend>
+          True / False, with a default choice</legend>
         <ul>
           <li>
-            <input type="radio" name="choices" value="true" checked>true<br>
+            <label>
+              <input type="radio" name="choice" value="true" checked>True<br>
+            </label>
           </li>
           <li>
-            <input type="radio" name="choices" value="false">false<br>
+            <label>
+              <input type="radio" name="choice" value="false">False<br>
+            </label>
           </li>
         </ul>
-        <label>
-          <select>
-            <option value="true" selected>true</option>
-            <option value="true">false</option>
-          </select>
-        </label>
         <!-- The server is expecting a choice between `true` and `false` only. Set it to `true` by default. -->
       </fieldset>
       <fieldset>
-        <legend>Confirm</legend>
+        <legend>
+          Confirm
+        </legend>
         <!-- The server is expecting a specific name/value pair of `confirm=true` that the user can confirm, or nothing in its place. -->
         <input type="checkbox" name="confirm" value="true">
       </fieldset>
       <fieldset>
-        <legend>Yes or No</legend>
+        <legend>
+          Yes or No
+        </legend>
         <ul>
           <li>
-            <input type="radio" name="choice" value="yes" required>Yes
+            <label>
+              <input type="radio" name="agree" value="yes" required>Yes
+            </label>
           </li>
           <li>
-            <input type="radio" name="choice" value="no" required>No
+            <label>
+              <input type="radio" name="agree" value="no" required>No
+            </label>
           </li>
         </ul>
         <!-- The server is expecting a value of `yes`, or `no` for the `agree` field. -->
@@ -111,22 +134,34 @@
 
     <form action="#form_single" method="GET" id="form_single">
       <header>
-        <h2>Single choice from a set of options</h2>
+        <h2>
+          Single choice from a set of options
+        </h2>
       </header>
       <fieldset>
-        <legend>Small list of values</legend>
+        <legend>
+          Small list of values
+        </legend>
         <ul>
           <li>
-            <input type="radio" name="choices" value="apples">Apples
+            <label>
+              <input type="radio" name="fruit" value="apples">Apples
+            </label>
           </li>
           <li>
-            <input type="radio" name="choices" value="bananas">Bananas
+            <label>
+              <input type="radio" name="fruit" value="bananas">Bananas
+            </label>
           </li>
           <li>
-            <input type="radio" name="choice" value=" grapes">Grapes
+            <label>
+              <input type="radio" name="fruit" value=" grapes">Grapes
+          </label>
           </li>
           <li>
-            <input type="radio" name="choices" value="plums">Plums
+            <label>
+              <input type="radio" name="fruit" value="plums">Plums
+            </label>
           </li>
         </ul>
 
@@ -141,9 +176,11 @@
           -->
       </fieldset>
       <fieldset>
-        <legend>Large list of values</legend>
+        <legend>
+          Large list of values
+        </legend>
         <label>
-          <select id="birds">
+          <select>
             <option value="ducks">Ducks</option>
             <option value="eagles">Eagles</option>
             <option value="herons">Herons</option>
@@ -165,24 +202,35 @@
         <h2>Multiple choices from a set of options</h2>
       </header>
       <fieldset>
-        <legend>Small list of values</legend>
+        <legend>
+          Small list of values</legend>
         <ul>
           <li>
-            <input type="checkbox" name="Apples" value="apples">Apples
+            <label>
+              <input type="checkbox" name="apples" value="apples">Apples
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Bananas" value="bananas">Bananas
+            <label>
+              <input type="checkbox" name="bananas" value="bananas">Bananas
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Grapes" value="grapes">Grapes
+            <label>
+              <input type="checkbox" name="grapes" value="grapes">Grapes
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Plums" value="plums">Plums
+            <label>
+              <input type="checkbox" name="plums" value="plums">Plums
+            </label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Large list of values</legend>
+        <legend>
+          Large list of values
+        </legend>
         <select name="birds" multiple>
           <option value="duck"> Ducks</option>
           <option value="eagle"> Eagles</option>
@@ -204,35 +252,38 @@
         <h2>Other form fields</h2>
       </header>
       <fieldset>
-        <legend>Hidden</legend>
-
+        <label>
+          hidden
+        <input type="hidden" name="signed" value="true">
+        </label>
         <!--
             The server is expecting a hidden `signed=true` pair here.
           -->
       </fieldset>
-      <input type="hidden" name="signed" value="true">
       <fieldset>
         <legend>File(s)</legend>
         <label>
-          <input type="file" name="photos">
+          <input type="file" name="photo" required>
+        </label>
+      </fieldset>
           <!--
             The server is expecting at least one file here, with the name of `photos`.
           -->
+      <fieldset>
+        <label>
+          Range
+          <input type="range" name="bearing" min="0" max="359">
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Range</legend>
-        <label>
-          <input type="range" min="0" max="369" class="slider">
           <!--
             The server is expecting at a numerical value for `bearing` between 0 and 359
           -->
-        </label>
-      </fieldset>
       <fieldset>
-        <legend>Colour</legend>
+        <legend>
+          Colour
+        </legend>
         <label>
-          <input type="color" name="background_color">
+          <input type="color" name="background_color" >
           <!--
             The server is expecting at a colour value for `background_colour`
           -->
