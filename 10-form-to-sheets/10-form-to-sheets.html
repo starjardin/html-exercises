@@ -20,50 +20,54 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
-
-    <p>
-      <label> contributor
         <input type="hidden" name="contributor" value="Tantely">
-      </label>
-    </p>
     <p>
-      <label>artist_name<br>
+      <label>
+        Artist_name<br>
         <input type="text" name="artist_name" required>
       </label>
     </p>
     <p>
-      <label> artist_id<br>
-        <input type="text" name="arist_id" pattern="[a-z-_]" required>
+      <label>
+        Artist_ID<br>
+        <input type="text" name="arist_id" pattern="[a-z-_]+" required>
+        <small>Rewrite your name in lowercase without any spaces nor punctuations, instead use (-) or (_)</small>
       </label>
     </p>
     <p>
-      <label>genre<br>
+      <label>
+        Genre<br>
         <select name="genre">
           <optgroup label="Malagasy genres">
-            <option value="R$B">R$B</option>
-            <option value="basesa">basesa</option>
+            <option value="basesa">Basesa</option>
+            <option value="kawitry">Kawitry</option>
             <option value="Kilalaky"> Kilalaky</option>
+            <option value="salegy">Salegy</option>
+            <option value="slow">Salegy</option>
+            <option value="watsa">Watsa</option>
+          <optgroup label="Intenational genres">
             <option value="Rap">Rap</option>
-            <option value="salegy">salegy</option>
-            <option value="kawitry">kawitry</option>
-            <option value="watsa">watsa</option>
-            <option value="slow">salegy</option>
+            <option value="r&b">R&B</option>
         </select>
       </label>
     </p>
     <p>
-      <label>photo_url<br>
-        <input type="url" name="photo_url">
+      <label>
+        Photo<br>
+        <input type="url" name="photo_url" required>
+        <small> Enter the url of your photo in this area.</small>
       </label>
     </p>
     <p>
-      <label> biography<br>
-        <input type="text" name="biography">
+      <label>
+        Biography<br>
+        <textarea name="biography" required></textarea>
       </label>
     </p>
     <p>
-      <label> website<br>
-        <input type="url" name="url">
+      <label>
+        Website<br>
+        <input type="url" name="Website" required>
       </label>
       <p>
         <button type="submit">Save</button>
