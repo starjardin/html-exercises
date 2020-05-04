@@ -1,7 +1,8 @@
-h1 {
- font-family: Arial, Helvetica, sans-serif;
- font-style: oblique;
- text-transform: capitalize;
+:root {
+  --column-width: 50px;
+  --row-width: 10rem;
+  --number-of-columns: 4;
+  --number-of-rows: 4;
 }
 
 h2 {
@@ -11,13 +12,14 @@ h2 {
 body {
   width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, var(--column-width));
+  grid-template-rows: repeat(2, var(--row-width));
   gap: 10px;
   grid-gap: 10px;
   grid-template-areas:
-  "header main main"
-  "footer main main";
+  "header header heasder"
+  " main main main"
+  "footer footer footer";
 }
 
 header {
@@ -35,7 +37,6 @@ footer {
 
 header {
   background-color: hotpink;
-  width: 100%;
   display: grid;
   text-align: center;
 }
@@ -45,19 +46,8 @@ footer {
   text-align: center;
 }
 
-footer ol {
+  footer ol {
   display: flex;
-}
-
-
-a:hover {
-  transition: transform .2s ease-in-out;
-  transform: scale(1);
-  background-color: green;
-}
-
-a:hover {
-  transform: scale(2);
 }
 
 footer li {

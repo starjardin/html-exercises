@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+ .cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  }
+
+  .cube-face {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: red;
+  }
+
+.cube-front-face {
+  transform: translate3d(0, 0, 100px);
+  background-color: blue;
+}
+
+.cube-bottom-face {
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+  background-color: hotpink;
+}
+
+.cube-left-face {
+  transform: rotateY(-90deg) translate3d(0, 0, 100px);
+  background-color: firebrick;
+}
+
+.cube-right-face {
+  transform: rotatey(90deg) translate3d(0, 0, 100px);
+  background-color: cadetblue;
+}
+
+.cube-top-face {
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+  background-color: green;
+}
+
+.cube-back-face {
+  transform: rotateX(-90deg) translate3d(0, 0, 100px);
+  background-color: black;
+}
+
+</style>
+<body>
+  <main>
+    <section>
+      <h2>
+        Cube creation
+      </h2>
+      <div class="containerz">
+        <div class="cube">
+            <div class="cube-face cube-front-face"></div>
+            <div class="cube-face cube-bottom-face"></div>
+            <div class="cube-face cube-left-face"></div>
+            <div class="cube-face cube-right-face"></div>
+            <div class="cube-face cube-top-face"></div>
+            <div class="cube-face cube-back-face"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
